@@ -1,0 +1,74 @@
+html {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../background1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+}
+
+#overlay {
+height: 3400px;
+width: 100vw;
+position: fixed;
+background: rgba(0, 0, 0, 0.65);
+}
+
+#clock {
+  font-size: 80px;
+  color: #EEEFF7;
+  text-align: right;
+  width: 100vw;
+  bottom: 10px;
+  right: 25px;
+  position: fixed;
+}
+
+#sayingContainer {
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  top: 25%;
+  textarea {
+    font-size: 120px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: none;
+    color: #EEEFF7;
+  }
+}
+
+#container {
+  width: 100vw;
+  position: absolute;
+  bottom: -2850px;
+}
+
+#articlesContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.article {
+  color: #EEEFF7;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.articleTitle {
+  @extend .article;
+  text-decoration: none;
+  font-size: 30px;
+  &:hover {color: #92cdcf;}
+  &:visited {
+    color: #92cdcf;
+  }
+}
+
+.articleSummary {
+  @extend .article;
+  font-size: 17px;
+}
