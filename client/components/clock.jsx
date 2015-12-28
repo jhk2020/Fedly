@@ -63,6 +63,9 @@ export default class Clock extends Component {
         $('#saying').blur();
         ref.update({'saying': this.state.saying});
       }
+      if (event.keyCode == '27') {
+        $('#saying').blur();
+      }
     })
   }
 
